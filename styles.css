@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+ 
+    font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Header */
+header {
+background-color: #333;
+color: #fff;
+padding: 10px 0;
+text-align: center;
+}
+
+header ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+header li {
+display: inline;
+}
+
+header a {
+color: #fff;
+text-decoration: none;
+}
+
+header a:hover {
+text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+position: relative;
+overflow: hidden;
+}
+
+.slides img {
+width: 100%;
+display: none;
+}
+
+.slides img:first-child {
+display: block;
+}
+
+/* About Section */
+.about {
+text-align: center;
+padding: 20px;
+}
+
+blockquote {
+font-style: italic;
+margin: 10px auto;
+}
+
+/* Contact Us */
+.contact-us {
+padding: 20px;
+background-color: #f9f9f9;
+}
+
+.contact-us h2 {
+text-align: center;
+}
+
+.contact-us form {
+max-width: 400px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.contact-us label {
+font-weight: bold;
+}
+
+.contact-us input,
+.contact-us select,
+.contact-us button {
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.contact-us button {
+background-color: #007bff;
+color: white;
+cursor: pointer;
+border: none;
+}
+
+.contact-us button:hover {
+background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+header ul {
+  flex-direction: column;
+}
+
+.slides img {
+  height: auto;
+}
+
+.contact-us form {
+  width: 90%;
+}
+}
+
+
+
